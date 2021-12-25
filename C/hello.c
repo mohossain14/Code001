@@ -2,5 +2,5 @@
 #include <stdio.h>
 
 int main(){
-    printf("Welcome to NFS: SpEeD, lets see if you have what it takes");
+    printf("Welcome to NFS: SpEeD, lets see if you have what it takes, we'll see when you come to town\n");
 }
