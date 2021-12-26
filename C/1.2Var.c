@@ -14,7 +14,7 @@ int main(){
     printf("Celsius\t\tFahrenheit\n");
     while (fahr <= upper){ //loops through until it is equal to upper limit
         celsius = 5 * (fahr-32) / 9; //the equation we want
-        printf("%d\t\t%d\n", fahr, celsius);
+        printf("%3d\t\t%5d\n", fahr, celsius);
         fahr = fahr + steps;
     }
     return 0;
