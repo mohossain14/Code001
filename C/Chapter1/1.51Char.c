@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int c;
+    int c; //initializes an int since we are dealing with a stream 
 
-    c = getchar();
-    while(c != EOF){
-        putchar(c);
-        c= getchar();
+    c = getchar(); //reads the characters
+    while(c != EOF){ //for loop tests until it reaches the end of the file
+        putchar(c); //output the char read
+        c= getchar(); //reads the next character in the stream
     }
     return 0;
 }
