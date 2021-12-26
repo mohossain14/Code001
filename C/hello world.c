@@ -1,10 +1,6 @@
-#include <stdio.h>
+#include <stdio.h> //include info about the standard library
 
-int main(){
-    int age;
-    printf("What is your age? ");
-    scanf("%d", &age);
-    printf("Your age is %d\n",age);
-    printf("Congrats on being around the world at age %d\n",age);
-    return 0; 
+main(){ //define a function that receives no arguments
+    printf("Hello world\n"); //calls printf fx that prints the characters
+    return 0;
 }
