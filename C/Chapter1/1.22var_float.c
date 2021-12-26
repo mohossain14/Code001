@@ -13,8 +13,8 @@ int main(){
     
     printf("Celsius\t\tFahrenheit\n");
     while (fahr <= upper){ //loops through until it is equal to upper limit
-        celsius = (5.0/9.0)* (fahr-32); //the equation we want in float mode to get more accurate
-        printf("%3d\t\t%5d\n", fahr, celsius); //the %3d right justifies to 3 digits likwise %6d is 6 digits by giving it width parameters
+        celsius = (5.0/9.0)* (fahr-32.0); //the equation we want in float mode to get more accurate, 5 and 9 need decimals to be used as floats
+        printf("%3.0f\t\t%6.1f\n", fahr, celsius); // the 3.0 indicates zero decimals while 6.1 indicates 1 digit past decimal
         fahr = fahr + steps;
     }
     return 0;
