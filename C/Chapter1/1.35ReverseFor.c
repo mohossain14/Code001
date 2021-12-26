@@ -1,6 +1,11 @@
 #include <stdio.h>
 
 int main(){
+
+    #define Lower 0  //!define constants so that people reading the code know exactly what is going on
+    #define UPPER 300
+    #define step 20 
+    
     int fahr;
     printf("Fahrenheit\tCelsius\n");
 
