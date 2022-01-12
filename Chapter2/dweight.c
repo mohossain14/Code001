@@ -16,7 +16,7 @@ int main(void){
 
     printf("Dimensions: %dx%dx%d\n", length, width, height);
     printf("Volume (cubic inches): %d\n", volume);
-    //can also written as one exp within print: printf("%d\n", height*length*width) 
+    //can also written as one exp within print: printf("%d\n", height*length*width);
     printf("Dimensional weight (pounds): %d\n", weight);
     
     return 0;
