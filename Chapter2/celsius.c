@@ -3,7 +3,7 @@
 #include <stdio.h>
 #define FREEZING_PT 32.0f //when using floats good to have f at the end to indicate float
 #define SCALE_FACTOR (5.0f / 9.0f) //we write it as 5.0/9.0 since integers get truncated to zero, putting it in float gives us an accurate approximation. 
-
+//we write it as f after the float bc otherwise it defaults to double which is more accurate but takes up more bytes, therefore f lets the value be stored within the allocated space
 int main(void){
     float fahrenheit, celsius;
 
