@@ -23,6 +23,5 @@ int main(void){
     printf("Balance remaining after second payment: %.2f\n", tot2);
     printf("Balance remaining after third payment: %.2f\n", tot3);
 
-
-
+    return 0;
 }
