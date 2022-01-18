@@ -3,8 +3,10 @@
 #include <stdio.h>
 
 int main(void){
-    int i = 7, j = 8;
-    printf("%d ", i++ - --j);
-    printf("%d %d", i , j);
+    int i = 3;
+    int j =4;
+    int k = 5; 
+    printf("%d \n", i++ - j++ + --k); 
+    printf("%d %d %d", i, j, k);
     return 0;
 }
