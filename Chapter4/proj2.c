@@ -13,4 +13,4 @@ int main(void){
     num3 = dig1 % 10; //take modulo to get ones place
 
     printf("The reversal is: %d%d%d", num3, num2, num1); //print out the result
-}
+} //pg 71
