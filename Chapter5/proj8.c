@@ -14,7 +14,11 @@ int main(void){
         printf("Closest departure time is 8:00 a.m., arriving at 10:16 a.m.");
     }
     else if (totalTime < 583){
-        printf("Closest departure time is 9:43 a.m., arriving at 11:52 a.m.");
+        if ((583 - totalTime) > (480 - totalTime)){
+            printf("Closest departure time is 9:43 a.m., arriving at 11:52 a.m.");
+        }
+        else 
+        //printf("Closest departure time is 9:43 a.m., arriving at 11:52 a.m.");
     }
     else if (totalTime < 679){
         printf("Closest departure time is 11:19 a.m., arriving at 1:31 p.m.");
