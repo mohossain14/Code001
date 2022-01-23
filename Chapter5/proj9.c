@@ -26,7 +26,7 @@ int main(void){
             }
         }
         else if (m1 < m2){
-            printf("%d/%d/%.2d is earlier than %d/%d/%.2d\n", m1,d1, y1, m2, d2, y2);
+            printf("%d/%d/%.2d is earlier than %d/%d/%.2d\n", m1,d1, y1, m2, d2, y2); //to print out 2 digits .2 is important to get the zero to show up on single digit years
         }
     }
     else if (y1 < y2){
