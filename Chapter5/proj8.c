@@ -1,4 +1,5 @@
 //gives the closest flight time to given time range
+//COME BACK AND REDO THIS IT ISNT DONE!!!!!
 
 #include <stdio.h>
 
@@ -14,14 +15,17 @@ int main(void){
         printf("Closest departure time is 8:00 a.m., arriving at 10:16 a.m.");
     }
     else if (totalTime < 583){
-        if ((583 - totalTime) > (480 - totalTime)){
+        if ((583 - totalTime) < (480 - totalTime)){
             printf("Closest departure time is 9:43 a.m., arriving at 11:52 a.m.");
         }
         else{
-            printf("Closest departure time is 8:00 a.m., arriving at 10:16 a.m.")
+            printf("Closest departure time is 8:00 a.m., arriving at 10:16 a.m.");
         }
     }
     else if (totalTime < 679){
+        if((679 - totalTime) < (583 - totalTime)){
+
+        }
         //printf("Closest departure time is 11:19 a.m., arriving at 1:31 p.m.");
     }
     else if (totalTime < 767){
