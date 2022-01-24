@@ -9,7 +9,7 @@ int main(void){
     printf("***ACME checkbook-balancing program ***\n");
     printf("Commands: 0=clear, 1=credit, 2=debit, 3=balance, 4=exit\n\n");
 
-    for(;;){
+    for(;;){ //this statement if how we do an infinite loop where we can have a return statement within the loop and break statements
         printf("Enter command: ");
         scanf("%d", &cmd);
         switch (cmd){
