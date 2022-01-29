@@ -3,26 +3,29 @@
 #include <stdio.h>
 
 int main(void){
-    int x, y, max = 1, div = 1;
+    int x, y, max = 1, n = 1;
 
-    printf("Enter two integers (space between nums): ");
+    printf("Enter two integers (space between nums): "); //this only works when the largesrt number is entered first
     scanf("%d %d", &x, &y);
 
+
     for(;;){
-        if ((x % div) == 0) {
-            if ((y % div) == 0){
-                max = div;
-                div++;
+        if ((x % n) == 0){ //first check if there is no remainder that indicates it is a divisor
+            if (n == x){ //we need to check that the first number isnt equal to the divisor to end the loop
+                break;
+            }
+            else if (y % n == 0){ //checks the second number for divisor 
+                max = n; //makes n the max divisor
+                n++; //increments the dividor
             }
             else {
-                div++;
-                continue;
+                n++; //increment regardless to continue loops
             }
         }
         else {
-            div++;
+            n++; //same keeps incrementeing
         }
     }
-    printf("Greatest common divisor: %d", div);
+    printf("Greatest common divisor: %d", max);
     return 0;
 }
