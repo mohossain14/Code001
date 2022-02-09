@@ -1,3 +1,4 @@
+//prints out the calendar given days and start of the month
 #include <stdio.h>
 
 int main(void){
@@ -9,7 +10,7 @@ int main(void){
     scanf("%d", &start);
 
     for(j = 1; j < start; j++){ //loops through
-        printf("  ");
+        printf(" **");
     }
     r = start - 1; //r is our tracker for the number of days within the week
 
