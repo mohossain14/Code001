@@ -1,12 +1,12 @@
 //prints table of compound interest rates
 
 #include <stdio.h>
-#define  NUM_RATES ((int) (sizeof(value) / sizeof(value[0])))
+#define  NUM_RATES ((int) (sizeof(value) / sizeof(value[0]))) //use this to give size of array
 #define INITIAL_BALANCE 100.00f
 
 int main(void){
     int i, low_rate, num_years, year;
-    double value[5];
+    double value[5]; 
 
     printf("Enter interest rate: ");
     scanf("%d", &low_rate);
@@ -14,7 +14,7 @@ int main(void){
     scanf("%d", &num_years);
 
     printf("\nYears");
-    for (i = 0; i < NUM_RATES; i++){
+    for (i = 0; i < NUM_RATES; i++){ //loops through and gives array an initial value
         printf("%6d%%", low_rate + i);
         value[i] = INITIAL_BALANCE;
     }
