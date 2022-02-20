@@ -5,7 +5,7 @@
 
 int main(void){
     int mat[N][N];
-    int i, j, Max[N] = {0}, low[N] = {100};
+    int i, j, Max[N] = {0}, Min[N] = {100};
     int row[N] = {0}, col[N] = {0};
     double avg[N];
 
@@ -33,8 +33,18 @@ int main(void){
 
     for(i = 0; i < BOUND; i++){
         for(j = 0; j < BOUND; j++){
-            if(mat[j][i] > Max[j]){
+            if(mat[j][i] > Max[i]){
                 Max[i] = mat[j][i];
+            }
+            else{
+                continue;
+            }
+        }
+    }
+    for(i = 0; i < BOUND; i++){
+        for(j = 0; j < BOUND; j++){
+            if(mat[j][i] < Min[i]){
+                Min[i] = mat[j][i];
             }
             else{
                 continue;
@@ -46,8 +56,14 @@ int main(void){
     for(i = 0; i < BOUND; i++){
         printf("%.2f ", avg[i]);
     }
-    printf("High Scores: \n");
+    printf("\nHigh Scores: ");
     for(i = 0; i < BOUND; i++){
         printf("%d ", Max[i]);
     }
+    printf("\nLow Scores: ");
+    for(i = 0; i < BOUND; i++){
+        printf("%d ", Min[i]);
+    }
+
+    return 0;
 }
