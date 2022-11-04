@@ -27,6 +27,7 @@ int main(void){
             printf("%7.2f", value[i]);
         }
         printf("\n");
+        printf("This is the end of the code.\n");
     }
     return 0;
 }
