@@ -129,7 +129,7 @@ elsif(vcount > 412 and vcount < 425 and hcount > 604 and hcount < 646) then
         green_data <= (others => '0');
         blue_data <= (others => '0');
 //letter E
-elsif(vcount > 295 and vcount < 308 and hcount > 661 and hcount < 691) then 
+elsif(vcount > 295 and vcount < 308 and hcount > 661 and hcount < 693) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
@@ -137,11 +137,11 @@ elsif(vcount > 295 and vcount < 425 and hcount > 661 and hcount < 674) then
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 321 and vcount < 334 and hcount > 661 and hcount < 691) then 
+elsif(vcount > 321 and vcount < 334 and hcount > 661 and hcount < 693) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 321 and vcount < 334 and hcount > 661 and hcount < 691) then 
+elsif(vcount > 321 and vcount < 334 and hcount > 661 and hcount < 693) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
