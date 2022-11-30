@@ -116,54 +116,50 @@ elsif(vcount > 475 and vcount < 500 and hcount > 785 and hcount < 875) then
 //You lose 
 
 //drawing letter Y
-if(vcount > 335 and vcount < 360 and hcount > 308 and hcount < 321) then 
+if(vcount > 220 and vcount < 388 and hcount > 330 and hcount < 350) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 295 and vcount < 335 and hcount > 321 and hcount < 334) then 
+elsif(vcount > 388 and vcount < 500 and hcount > 350 and hcount < 370) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 335 and vcount < 360 and hcount > 334 and hcount < 347) then 
-        red_data <= (others => '0');
-        green_data <= (others => '0');
-        blue_data <= (others => '0');
-elsif(vcount > 295 and vcount < 360 and hcount > 362 and hcount < 372) then 
+elsif(vcount > 220 and vcount < 388 and hcount > 370 and hcount < 390) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
 //letter O
-elsif(vcount > 295 and vcount < 360 and hcount > 362 and hcount < 372) then 
+elsif(vcount > 220 and vcount < 500 and hcount > 405 and hcount < 430) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 295 and vcount < 305 and hcount > 362 and hcount < 404) then 
+elsif(vcount > 220 and vcount < 245 and hcount > 405 and hcount < 430) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 415 and vcount < 360 and hcount > 362 and hcount < 404) then 
+elsif(vcount > 220 and vcount < 500 and hcount > 455 and hcount < 480) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 295 and vcount < 360 and hcount > 394 and hcount < 404) then 
+elsif(vcount > 475 and vcount < 500 and hcount > 405 and hcount < 430) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
 
 //letter U
-elsif(vcount > 295 and vcount < 360 and hcount > 419 and hcount < 432) then 
+elsif(vcount > 220 and vcount < 500 and hcount > 445 and hcount < 470) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 295 and vcount < 308 and hcount > 432 and hcount < 458) then 
+elsif(vcount > 220 and vcount < 235 and hcount > 445 and hcount < 510) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 295 and vcount < 360 and hcount > 445 and hcount < 458) then 
+elsif(vcount > 220 and vcount < 500 and hcount > 485 and hcount < 510) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-
+        
 //Letter W
 elsif(vcount > 320 and vcount < 360 and hcount > 493 and hcount < 506) then 
         red_data <= (others => '0');
