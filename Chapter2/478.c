@@ -159,7 +159,7 @@ elsif(vcount > 475 and vcount < 500 and hcount > 785 and hcount < 875) then
             green_data <= (others => '0');
             blue_data <= (others => '0');
         
-//Letter W
+--//Letter W
 elsif(vcount > 220 and vcount < 430 and hcount > 595 and hcount < 630) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
@@ -180,29 +180,29 @@ elsif(vcount > 220 and vcount < 430 and hcount > 705 and hcount < 740) then
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-//Letter I
+--//Letter I
 elsif(vcount > 220 and vcount < 500 and hcount > 760 and hcount < 795) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-//Letter N
-elsif(vcount > 295 and vcount < 360 and hcount > 570 and hcount < 583) then 
+--//Letter N
+elsif(vcount > 220 and vcount < 500 and hcount > 810 and hcount < 845) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 347 and vcount < 360 and hcount > 583 and hcount < 596) then 
+elsif(vcount > 220 and vcount < 255 and hcount > 810 and hcount < 870) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 308 and vcount < 347 and hcount > 596 and hcount < 609) then 
+elsif(vcount > 255 and vcount < 465 and hcount > 870 and hcount < 905) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 295 and vcount < 308 and hcount > 609 and hcount < 622) then 
+elsif(vcount > 465 and vcount < 500 and hcount > 905 and hcount < 975) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
-elsif(vcount > 295 and vcount < 360 and hcount > 622 and hcount < 635) then 
+elsif(vcount > 220 and vcount < 500 and hcount > 940 and hcount < 975) then 
         red_data <= (others => '0');
         green_data <= (others => '0');
         blue_data <= (others => '0');
