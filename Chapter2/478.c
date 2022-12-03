@@ -379,59 +379,134 @@ if (hcount > 295 and hcount < 385 and vcount > 50 and vcount < 80) then //-- Wri
             red_data <= (others => '1');
             green_data <= (others => '1');
             blue_data <= (others => '1');
+
+
+        --NEW LOSE SCREEN
+        --Letter L
+        elsif(hcount > 385 and hcount < 315 and vcount > 375 and vcount < 525) then
+            red_data <= (others => '1');
+            green_data <= (others => '1');
+            blue_data <= (others => '1');
+        elsif(hcount > 375 and hcount < 475 and vcount > 495 and vcount < 525) then
+            red_data <= (others => '1');
+            green_data <= (others => '1');
+            blue_data <= (others => '1');
+        --Letter O
+        elsif(hcount > 505 and hcount < 535 and vcount > 405 and vcount < 495) then
+            red_data <= (others => '1');
+            green_data <= (others => '1');
+            blue_data <= (others => '1');
+        elsif(hcount > 535 and hcount < 595 and vcount > 495 and vcount < 525) then
+            red_data <= (others => '1');
+            green_data <= (others => '1');
+            blue_data <= (others => '1');
+        elsif(hcount > 595 and hcount < 625 and vcount > 405 and vcount < 525) then
+            red_data <= (others => '1');
+            green_data <= (others => '1');
+            blue_data <= (others => '1');
+        --Letter S
+        elsif(hcount > 685 and hcount < 775 and vcount > 375 and vcount < 405) then
+            red_data <= (others => '1');
+            green_data <= (others => '1');
+            blue_data <= (others => '1');
+        elsif(hcount > 655 and hcount < 685 and vcount > 405 and vcount < 435) then
+            red_data <= (others => '1');
+            green_data <= (others => '1');
+            blue_data <= (others => '1');
+        elsif(hcount > 685 and hcount < 745 and vcount > 435 and vcount < 465) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        elsif(hcount > 745 and hcount < 775 and vcount > 465 and vcount < 495) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        elsif(hcount > 655 and hcount < 745 and vcount > 495 and vcount < 525) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+            --Letter E
+        elsif(hcount > 835 and hcount < 895 and vcount > 375 and vcount < 405) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        elsif(hcount > 805 and hcount < 835 and vcount > 405 and vcount < 435) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+         elsif(hcount > 835 and hcount < 865 and vcount > 465 and vcount < 495) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        elsif(hcount > 835 and hcount < 895 and vcount > 495 and vcount < 525) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+
+        --NEW YOU [All Types]
+        elsif(hcount > 445 and hcount < 475 and vcount > 195 and vcount < 255) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        elsif(hcount > 475 and hcount < 505 and vcount > 255 and vcount < 345) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+         elsif(hcount > 505 and hcount < 535 and vcount > 255 and vcount < 345) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        --Letter O
+        elsif(hcount > 565 and hcount < 595 and vcount > 225 and vcount < 315) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        elsif(hcount > 595 and hcount < 655 and vcount > 195 and vcount < 225) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        elsif(hcount > 315 and hcount < 345 and vcount > 225 and vcount < 315) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
         elsif(hcount >  and hcount <  and vcount >  and vcount < ) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
         elsif(hcount >  and hcount <  and vcount >  and vcount < ) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
-        elsif(hcount > 820 and hcount < 850 and vcount > 260 and vcount < 350) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
-        elsif(hcount > 850 and hcount < 910 and vcount > 230 and vcount < 260) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
-        elsif(hcount > 850 and hcount < 880 and vcount > 290 and vcount < 320) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
-        elsif(hcount > 850 and hcount < 910 and vcount > 350 and vcount < 380) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+         elsif(hcount >  and hcount <  and vcount >  and vcount < ) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
         elsif(hcount >  and hcount <  and vcount >  and vcount < ) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
         elsif(hcount >  and hcount <  and vcount >  and vcount < ) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
-        elsif(hcount > 820 and hcount < 850 and vcount > 260 and vcount < 350) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
-        elsif(hcount > 850 and hcount < 910 and vcount > 230 and vcount < 260) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
-        elsif(hcount > 850 and hcount < 880 and vcount > 290 and vcount < 320) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
-        elsif(hcount > 850 and hcount < 910 and vcount > 350 and vcount < 380) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
         elsif(hcount >  and hcount <  and vcount >  and vcount < ) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+         elsif(hcount >  and hcount <  and vcount >  and vcount < ) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
         elsif(hcount >  and hcount <  and vcount >  and vcount < ) then
-            red_data <= (others => '1');
-            green_data <= (others => '1');
-            blue_data <= (others => '1');
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        elsif(hcount >  and hcount <  and vcount >  and vcount < ) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        elsif(hcount >  and hcount <  and vcount >  and vcount < ) then
+            red_data <= (others => '0');
+            green_data <= (others => '0');
+            blue_data <= (others => '0');
+        
