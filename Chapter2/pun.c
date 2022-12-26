@@ -1,7 +1,16 @@
-#include <stdio.h> //directives are only one line long and are needed since C has no built in read/write functions
+#include <stdio.h>
 
-int main(void){ //function that contains a group of statements to be executed
-    printf("To C, or not to C: that is the question.\n"); //semi-colon shows end of statement
-    printf("Brevity is the soul of wit.\n --Shakespeare\n");
-    return 0; //we write this to indicate the end of function and give the expected value of our function since it is int main()
+int main(void){
+    int pref, group_num, pub_code, item_num, check;
+
+    printf("Enter the ISBN: ");
+    scanf("%d-%d-%d-%d-%d", &pref, &group_num, &pub_code, &item_num, &check);
+
+    printf("GS1 Prefix: %d\n", pref);
+    printf("Group Identifier: %d\n", group_num);
+    printf("Publisher Code: %d\n", pub_code);
+    printf("Item Number: %d\n", item_num);
+    printf("Check Digit: %d\n", check);
+
+    return 0;
 }
