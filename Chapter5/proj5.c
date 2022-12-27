@@ -1,32 +1,32 @@
-//income tax calculator
-
 #include <stdio.h>
 
 int main(void){
-    float income, tax; //use float since we will likely have decimals
+    float amount;
 
-    printf("Enter your yearly income: ");
-    scanf("%f", &income);
+    printf("Enter the total amount: ");
+    scanf("%f", &amount);
 
-    if (income < 750.00f){ //statements need to compare to brackets
-        tax = .01 * income;
-    }
-    else if (income < 2250.00f){
-        tax = 7.5f + (.02f * (income -750.00f)); 
-    }
-    else if (income < 3750.00f){
-        tax = 37.5f + (.03f * (income -2250.00f));
-    }
-    else if (income < 5250.00f){
-        tax = 82.5f + (.04f * (income - 3750.00f));
-    }
-    else if (income < 7000.00f){
-        tax = 142.5f + (.05f * (income - 5250.00f));
-    }
-    else if (income > 7000.00f){
-        tax = 230.00f + (.06f * (income - 7000.00f));
-    }
-    printf("Your taxed income will be: $%.2f", tax);
-    
-    return 0;
+    printf("Your taxed amount is ");
+
+   if (amount < 750.00f){
+        printf("%3.2f", amount + (0.01f * amount));
+   }
+   else if((amount >= 750.00f) & (amount <= 2250.00f)){
+        printf("%4.2f", amount + (0.02f * amount) + 7.5f);
+   }
+   else if((amount >= 2250.00f) & (amount <= 3750.00f)){
+        printf("%4.2f", amount + (0.03f * amount) + 37.5f);
+   }
+   else if((amount >= 3750.00f) & (amount <= 5250.00f)){
+        printf("%4.2f", amount + (0.04f * amount) + 82.5f);
+   }
+   else if((amount >= 5250.00f) & (amount <= 7000.00f)){
+        printf("%4.2f", amount + (0.05f * amount) + 142.5f);
+   }
+   else if(amount >= 7000.00f){
+        printf("%5.2f", amount + (0.06f * amount) + 230.0f);
+   }
+   printf("\n");
+
+   return 0;
 }
