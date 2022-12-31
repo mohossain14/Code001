@@ -1,32 +1,50 @@
 #include <stdio.h>
 
+#define EIGHTAM 480
+#define NINEAM 583
+#define ELEVENAM 649
+#define TWELVEPM 767
+#define TWOPM 840
+#define THREEPM 945
+#define SEVENPM 1140
+#define NINEPM 1305
+
 int main(void){
-    float amount;
+    int usr_h, usr_m;
+    int time;
+ 
 
-    printf("Enter the total amount: ");
-    scanf("%f", &amount);
 
-    printf("Your taxed amount is ");
+    printf("Enter a 24-hour time: ");
+    scanf("%d:%d", &usr_h, &usr_m);
+    time = (usr_h * 60) + usr_m;
 
-   if (amount < 750.00f){
-        printf("%3.2f", amount + (0.01f * amount));
-   }
-   else if((amount >= 750.00f) & (amount <= 2250.00f)){
-        printf("%4.2f", amount + (0.02f * amount) + 7.5f);
-   }
-   else if((amount >= 2250.00f) & (amount <= 3750.00f)){
-        printf("%4.2f", amount + (0.03f * amount) + 37.5f);
-   }
-   else if((amount >= 3750.00f) & (amount <= 5250.00f)){
-        printf("%4.2f", amount + (0.04f * amount) + 82.5f);
-   }
-   else if((amount >= 5250.00f) & (amount <= 7000.00f)){
-        printf("%4.2f", amount + (0.05f * amount) + 142.5f);
-   }
-   else if(amount >= 7000.00f){
-        printf("%5.2f", amount + (0.06f * amount) + 230.0f);
-   }
-   printf("\n");
+    if (time <= ((NINEAM - EIGHTAM)/2 )){
+        printf("Closest departure time is 8:00am., arriving at 10:16am.\n");
+    }
+    else if(((NINEAM - EIGHTAM)/2) < time && time <= (ELEVENAM - NINEAM)/2){
+        printf("Closest departure time is 9:43am., arriving at 11:52am.\n");
+    }
+    else if(((ELEVENAM - NINEAM)/2) < time && time <= (TWELVEPM - ELEVENAM)/2){
+        printf("Closest departure time is 11:19am., arriving at 1:31pm.\n");
+    }
+    else if(((TWELVEPM - ELEVENAM)/2) < time && time <= (TWOPM - TWELVEPM)/2){
+        printf("Closest departure time is 12:47pm., arriving at 3:00pm.\n");
+    }
+    else if(((TWOPM - TWELVEPM)/2) < time && time <= (THREEPM - TWOPM)/2){
+        printf("Closest departure time is 2:00pm., arriving at 4:08pm.\n");
+    }
+    else if(((THREEPM - TWOPM)/2) < time && time <= (SEVENPM - THREEPM)/2){
+        printf("Closest departure time is 3:45pm., arriving at 5:55pm.\n");
+    }
+    else if(((SEVENPM - THREEPM)/2) < time && time <= (NINEPM - SEVENPM)/2){
+        printf("Closest departure time is 3:45pm., arriving at 5:55pm.\n");
+    }
+    else if(((NINEPM - SEVENPM)/2) < time && time > NINEPM){
+        printf("Closest departure time is 3:45pm., arriving at 5:55pm.\n");
+    }
+
+
 
    return 0;
 }
