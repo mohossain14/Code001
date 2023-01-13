@@ -7,18 +7,19 @@ int main(void){
    printf("Enter a number: ");
    scanf("%f",&num1);
 
-   while (flag != 0){
+   while(flag != 0){
         printf("Enter a number: ");
         scanf("%f",&num1);
-        if (num1 > num2){
-                num2 = num1;
-                flag = 1;
+        if(num1 > num2){
+            num2 = num1;
         }
-        else if (num1 = 0){
+        else if(num1 == 0.0f){
             flag = 0;
-            break;
         }
-   } 
+        else{
+            continue;
+        }
+   };
    printf("The largest number entered was %.2f\n", num2);
    return 0;
 }
